@@ -5,7 +5,7 @@ const esquemaRegistroMensaje = new mongoose.Schema({
   para: String,
   desde: String,
   canal: { type: String, enum: ["whatsapp"], default: "whatsapp" },
-  cargaUtil: { type: Object }, // payload crudo de WhatsApp
+  cargaUtil: { type: Object }, // payload crudo de wsp
   estadoEnvio: { type: String, enum: ["en_cola","enviado","entregado","leido","fallido"] },
   cita: { type: mongoose.Schema.Types.ObjectId, ref: "Cita" },
   paciente: { type: mongoose.Schema.Types.ObjectId, ref: "Paciente" },

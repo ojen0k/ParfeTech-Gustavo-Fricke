@@ -11,9 +11,9 @@ export async function verificarWebhook(req, res) {
 
 export async function recibirWebhook(req, res, next) {
   try {
-    // Aquí, cuando integren WhatsApp Cloud, procesarás el body:
-    // - Guardarás el mensaje entrante en RegistroMensaje
-    // - Detectarás si el texto es “1” (confirmar) o “2” (rechazar) y actualizarás la Cita
+    // Seccion de wsp:
+    // - Guardará el mensaje entrante en RegistroMensaje
+    // - Detectar si el texto es “1” (confirmar) o “2” (rechazar) y actualizar la Cita
     res.sendStatus(200);
   } catch (e) { next(e); }
 }
